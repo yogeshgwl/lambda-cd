@@ -18,6 +18,7 @@ def lambda_handler(event, context):
     cursor = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
     cursor.execute(sql)
     result = cursor.fetchall()
+    # Testing
 
     return {
         'statusCode': 200,
